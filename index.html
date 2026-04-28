@@ -549,7 +549,7 @@
             let box = document.getElementById("countdownBox");
             let msg = document.getElementById("countdownMsg");
 
-            document.getElementById("tgl_pengumuman").value = targetTime;
+            document.getElementById("tgl_pengumuman").innerText = new Date(targetTime).toLocaleString();
 
             let timer = setInterval(function () {
                 let now = new Date().getTime();
