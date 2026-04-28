@@ -429,7 +429,7 @@
                     <div class="time-box"><span class="num">00</span><span class="text">Dtk</span></div>
                 </div>
                 <p style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 20px;" id="countdownMsg">Pengumuman akan
-                    dibuka dalam waktu di atas</p>
+                    dibuka Pada <span id="tgl_pengumuman"></span></p>
             </div>
 
             <div id="formBox" style="display: none;">
@@ -548,6 +548,8 @@
             countdownWrapper.style.display = "block";
             let box = document.getElementById("countdownBox");
             let msg = document.getElementById("countdownMsg");
+
+            document.getElementById("tgl_pengumuman").value = targetTime;
 
             let timer = setInterval(function () {
                 let now = new Date().getTime();
